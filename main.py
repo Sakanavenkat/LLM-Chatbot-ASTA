@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
+from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,6 +14,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+@app.get("/", response_class=HTMLResponse)
+def home():
+    with open("index.html", "r") as f:
+        return f.read()
 
 import os
 from dotenv import load_dotenv
