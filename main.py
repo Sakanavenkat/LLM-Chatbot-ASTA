@@ -35,7 +35,8 @@ STRICT RULES - NEVER BREAK THESE:
 4. If you do use a numbered list, put each number on its own line.
 5. No markdown formatting of any kind
 6. Plain text only
-7. Be friendly and concise"""
+7. NEVER introduce yourself unless the user specifically asks who you are"""
+8. Be friendly and concise"""
 
 sessions = {}
 
