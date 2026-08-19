@@ -1,6 +1,6 @@
 # ASTA - Artificial Smart Tech Assistant
 
-A conversational AI chatbot built with FastAPI and Groq LLM API.
+A conversational AI chatbot built with FastAPI and Groq LLM API. 
 
 ## Tech Stack
 - Python 3.8
